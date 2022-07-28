@@ -94,12 +94,13 @@ ul{
 
 .icon{
     fill: #757575;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon.envelope{
     width: 16px;
     height: 12px;
     margin-right: 10px;
-    transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon.smartphone{
     width: 10px;
@@ -176,6 +177,7 @@ ul{
     line-height: 1.88;
     letter-spacing: 0.06em;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
@@ -336,6 +338,7 @@ background-color: #188CE8;
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -373,12 +376,12 @@ background-color: #188CE8;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     padding: 13px 32px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .company:hover,
 .company:focus{
     border: 1px solid var(--accent-color);
-    border-radius: 4px;
 }
 .company:hover .icon,
 .company:focus .icon {
@@ -410,6 +413,7 @@ background-color: #188CE8;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address .address-item:not(:last-child){
@@ -420,6 +424,7 @@ background-color: #188CE8;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address .location:hover,
 .address .location:focus,
@@ -459,6 +464,7 @@ background-color: #188CE8;
     height: 44px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:hover,
@@ -498,7 +504,10 @@ background-color: #188CE8;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
-    cursor: pointer
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter .btn:hover,
@@ -535,6 +544,7 @@ background-color: #188CE8;
 
 .portfolio-item .link{
     display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item .link:hover,
 .portfolio-item .link:focus{
